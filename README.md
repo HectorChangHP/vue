@@ -12,7 +12,7 @@ graph TD
     G --> H{是否啟用 PCD: PcdSgFeatureByteApplyTxtDefaultEnable?}
     H -- 否 --> I[安裝完成，返回 EFI_SUCCESS]
     H -- 是 --> J(嘗試獲取 SYS_GUARD_FB_FACTORYCONFIG_FLAGS 變數)
-    J --> K{變數是否存在? (EFI_NOT_FOUND)}
+    J --> K{變數是否存在?}
     K -- 否 --> I
     K -- 是 --> L(呼叫 SetDefaultSGFbFactoryConfigFlags 函數)
     L --> I
