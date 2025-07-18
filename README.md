@@ -1,5 +1,4 @@
 '''
-
 graph TD
     A[程式啟動] --> B(InstallCpuTechFeatureByteHandler 函數被呼叫)
 
@@ -64,7 +63,5 @@ graph TD
         GG -- 是 --> HH(呼叫 SetVtEnable 啟用 VTx/VTd 功能)
         HH --> END_FB_PROCESS[Feature Byte 處理完成]
         GG -- 否 --> END_FB_PROCESS
-    end
-    
-
+    end   
 '''
