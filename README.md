@@ -1,4 +1,4 @@
-'''
+'''mermaid
 graph TD
     A[程式啟動] --> B(InstallCpuTechFeatureByteHandler 函數被呼叫)
 
