@@ -1,7 +1,7 @@
 ```mermaid
 graph TD
     A[程式啟動] --> B(InstallCpuTechFeatureByteHandler 函數被呼叫)
-    B --> C{是否在 SMM 模式下運行? (InMpm())}
+    B --> C{是否在 SMM 模式下運行?}
     C -- 否 --> D[返回 EFI_OUT_OF_RESOURCES]
     C -- 是 --> E(分配 FEATURE_BYTE_HANDLER_PROTOCOL 記憶體)
     E --> F(設定 FbHandler 的回調函數)
